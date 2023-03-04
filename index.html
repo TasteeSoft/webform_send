@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap demo</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container px-5 my-5">
+        <form action="conn.php" method="post">
+            <div class="form-floating mb-3">
+                <input class="form-control" name="Vorname" type="text" placeholder="Vorname" data-sb-validations="required" />
+                <label for="Vorname">Vorname</label>
+                <div class="invalid-feedback" data-sb-feedback="Vorname:required">Vorname is required.</div>
+            </div>
+            <div class="form-floating mb-3">
+                <input class="form-control" name="Nachname" type="text" placeholder="Nachname" data-sb-validations="required" />
+                <label for="Nachname">Nachname</label>
+                <div class="invalid-feedback" data-sb-feedback="Nachname:required">Nachname is required.</div>
+            </div>
+            <div class="form-floating mb-3">
+                <input class="form-control" name="Geburtsdatum" type="text" placeholder="Geburtsdatum" data-sb-validations="required" />
+                <label for="Geburtsdatum">Geburtsdatum</label>
+                <div class="invalid-feedback" data-sb-feedback="Geburtsdatum:required">Geburtsdatum is required.</div>
+            </div>
+            <div class="form-floating mb-3">
+                <input class="form-control" name="Versicherungsnummer" type="text" placeholder="Versicherungsnummer" data-sb-validations="required" />
+                <label for="Versicherungsnummer">Versicherungsnummer</label>
+                <div class="invalid-feedback" data-sb-feedback="Versicherungsnummer:required">Versicherungsnummer is required.</div>
+            </div>
+            <div class="form-floating mb-3">
+                <input class="form-control" name="Versicherungen_idVersicherungen" id="Versicherungen_idVersicherungen" type="text" placeholder="Versicherungen_idVersicherungen" data-sb-validations="required" />
+                <label for="Versicherungen_idVersicherungen">Versicherungen_idVersicherungen</label>
+                <div class="invalid-feedback" data-sb-feedback="Versicherungen_idVersicherungen:required">Versicherungen_idVersicherungen is required.</div>
+            </div>
+            <div class="d-none" id="submitSuccessMessage">
+                <div class="text-center mb-3">
+                    <div class="fw-bolder">Form submission successful!</div>
+                    <p>To activate this form, sign up at</p>
+                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                </div>
+            </div>
+            <input class="btn-outline-secondary" type="submit" value="Senden">
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
